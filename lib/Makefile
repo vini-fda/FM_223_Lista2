@@ -1,15 +1,15 @@
 CC = gcc
 CFLAGS = -Wall -shared -fPIC -O3
 
-LIB_NAME = libhenon.so
-SRC_FILE = henon.c
+all: libhenon.so libpendulum.so
 
-all: $(LIB_NAME)
-
-$(LIB_NAME): $(SRC_FILE)
+libhenon.so: henon.c
 	$(CC) $(CFLAGS) -o $@ $^
 
+libpendulum.so: pendulum.c
+	$(CC) $(CFLAGS) -lm -o $@ $^
+
 clean:
-	rm -f $(LIB_NAME)
+	rm -f libhenon.so libpendulum.so
 
 .PHONY: clean
