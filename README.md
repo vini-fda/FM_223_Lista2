@@ -4,4 +4,4 @@ Este repositório contém as minhas soluções das questões da lista 2 da disci
 
 Todas as soluções (inclusive das questões teóricas) foram feitas em um único Jupyter Notebook. Para visualizá-lo, basta ter uma instalação do [Jupyter](https://jupyter.org/) e um navegador web ou IDE que o suporte, como o VSCode.
 
-Além disso, foi feita uma biblioteca em C para implementar as partes mais pesadas computacionalmente. Para compilar, basta executar o comando `make` na pasta `lib`. Para limpar os arquivos gerados, basta executar o comando `make clean`.
+Além disso, foram feitas bibliotecas em C para implementar as partes mais computacionalmente custosas. Para compilar, basta executar o comando `make` na pasta `lib`. Para limpar os arquivos gerados, basta executar o comando `make clean`.
